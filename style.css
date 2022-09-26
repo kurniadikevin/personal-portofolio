@@ -2,12 +2,12 @@
 
 body{
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
     max-height: fit-content;
     min-width: 300px;
     margin: 50px 100px;
     margin-bottom: 50px;
-    border: 1px solid red;
+   /*  border: 1px solid red; */
     box-sizing: border-box;
 }
 
@@ -32,7 +32,8 @@ footer>div{
 header{
     display: grid;
     grid-template-columns: 2fr 3fr;
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
     .image-cont{
         display: flex;
@@ -43,12 +44,16 @@ header{
         padding: 20px;
         display: grid;
     }
+        .profile-upper{
+            display: flex;
+            justify-content: space-between;
+        }
         .desc-bottom{
             display: flex;
             justify-content: flex-end;
             align-items: center;
             gap: 20px;
-
+            padding-right: 20px;
         }
 
 .main{
@@ -63,18 +68,19 @@ header{
 }
 
     .project-box{
-    padding: 30px; 
+    
     display: grid;
     grid-template-rows: 2fr 1fr;
     }
         .project-sc{
-
+            padding: 30px;
         }
 
         .project-detail{
            background-color: bisque;
            display: grid;
            grid-template-columns: 2fr 1fr;
+           padding: 30px;
         }
             .project-link{
                 display: flex;
@@ -83,12 +89,59 @@ header{
                 gap: 10px;
             }
 
+.mystack-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+    .mystack-header{
+        font-size: 20pt;
+    }
+
+    .mystack-cont{
+        
+    }
+    .mystack-cont>img{
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
 
 footer{
   /*   max-height: 300px; */
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
+
+.footer-content{
+    display: grid;
+    grid-template-rows: 3fr 2fr 2fr;
+   padding-left: 20px;
+}
+    .fc-row1{
+       display: flex;
+       align-items: center;
+        font-size: 27pt;
+    }
+
+    .fc-row2{
+        display: flex;
+        align-items: flex-start;
+        font-size: 17pt;
+    }
+    .fc-row3{
+        display: flex;
+        align-items: flex-start;
+        font-size: 20pt;
+        
+    }
+        #contact-btn{
+            font-size: 20pt;
+            background-color: darkred;
+            color: white;
+        }
     
 @media(max-width: 600px){
     
@@ -100,7 +153,8 @@ footer{
     header{
         grid-template-rows: 3fr 2fr;
         grid-template-columns: none;
-       
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
         
@@ -109,6 +163,14 @@ footer{
     grid-template-rows: repeat(6,6fr);
     padding: 50px;
     }
+
+    .mystack-cont{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
 
     footer{
         grid-template-rows: 2fr 3fr;

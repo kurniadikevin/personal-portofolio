@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root{
     background-image: linear-gradient(to right,rgb(50,50,50),rgb(25,25,25));
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
 }
 
 body{
@@ -12,10 +16,26 @@ body{
     margin-bottom: 50px;
     /* border: 1px solid red;  */
     box-sizing: border-box;
-   
+}
+
+a{
+    color: black;
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+}
+
+#github-head{
+    color: white;
+    cursor: pointer;
+}
+#github-head:hover{
+    color: gray;
 }
 
 /*border */
+
 header,/*  .main, */ footer{
     border-bottom:1px solid gray;
 }
@@ -23,6 +43,7 @@ header,/*  .main, */ footer{
 header{
     border-top: 1px solid gray;
 }
+
 /* header>div{
     border: 1px solid gray;
 }
@@ -42,6 +63,9 @@ header{
     /* padding-top: 50px; */
     padding-bottom: 50px;
 }
+    h2{
+        font-size: 20pt;
+    }
     .image-cont{
         display: flex;
         align-items: center;
@@ -71,7 +95,7 @@ header{
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(3, minmax(300px, 5fr));
-     grid-template-rows: repeat(2,6fr); 
+    grid-template-rows: repeat(2,6fr); 
     gap: 100px;
    
 }

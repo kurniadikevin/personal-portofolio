@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>Personal Portofolio</title>
+    <title>Kevin Kurniadi</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <header>
+    <header id="home-link">
         <div class="image-cont">
-            <img src="./assets/profile-foto.jpg" alt="profile picture" width="200px" height="200px">
+            <div class="name-cont">
+                <div id="name-head">Kevin Kurniadi</div>
+                <div id="role-head">Web Developer</div>
+            </div>
+            <img id='profile-image' src="./assets/profile-foto.jpg" alt="profile picture" width="200px" height="200px">
         </div>
         <div class="profile-desc">
             <div>
                 <div class="profile-upper">
+                    <div class="dashboard">
+                        <div><a href="#home-link">Home</a></div>
+                        <div><a href="#work-link">Work</a></div>
+                        <div ><a href="#contact-link">Contact</a></div>
+                    </div>
                     <h2>About me</h2>
-                    <span class="material-symbols-outlined">light_mode</span>
+                    <span class="material-symbols-outlined" id="light-mode">light_mode</span>
                 </div>
                  
-                 <p id="description-head">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                    rem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum rem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum rem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                 <p id="description-head">
+                    My name is Kevin Kurniadi and i'm a Web Developer from Bandung, Indonesia. My main language is Javascript but willing to learn new language or technology to building project, especially Web development and Software engineering field.  My background is in coffee business and music. My hobbies include cycling and music. 
                  </p>
             </div>
             <div class="desc-bottom">
@@ -35,7 +44,7 @@
         </div>
     </header>
 
-    <div class="main">
+    <div class="main" id="work-link">
         <div class="project-box">
             <div class="project-sc">Project Screenshot</div>
             <div class="project-detail">
@@ -65,10 +74,10 @@
         <div class="project-box">
             <div class="project-sc">Project Screenshot</div>
             <div class="project-detail">
-                <div class="project-name">Shopping Cart</div>
+                <div class="project-name">Friendface</div>
                 <div class="project-link">
                     <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/shopping-cart">
+                    <a href="https://github.com/kurniadikevin/odin-book">
                     <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -118,18 +127,44 @@
     <div class="mystack-row">
         <div class="mystack-header">My stack</div>
             <div class="mystack-cont">
-                <img src="./assets/icons8-html-5-48.png" alt="html logo">
-                <img src="./assets/icons8-css3-48.png" alt="css logo" >
-                <img src="./assets/icons8-javascript-48.png" alt="javascipt logo">
-                <img src="./assets/icons8-git-48.png" alt="git logo" srcset="">
-                <img src="./assets/icons8-webpack-64.png" alt="webpack logo" srcset="">
-                <img src="./assets/icons8-google-firebase-console-48.png" alt="firebase logo" srcset="">
-                <img src="./assets/icons8-react-40.png" alt="react logo" srcset="">
+                <div>
+                <img src="./assets/icons8-html-5-48.png" alt="html logo"><div>Html</div>
+                </div>
+                <div>
+                <img src="./assets/icons8-css3-48.png" alt="css logo" ><div>Css</div>
+                </div>
+                <div>
+                <img src="./assets/icons8-javascript-48.png" alt="javascipt logo"><div>Javascript</div>
+                </div>
+                <div>
+                <img src="./assets/icons8-git-48.png" alt="git logo" srcset=""><div>Git</div>
+                </div>
+                <div>
+                <img src="./assets/icons8-webpack-64.png" alt="webpack logo" srcset=""><div>Webpack</div>
+                </div>
+                <div>
+                <img src="./assets/icons8-google-firebase-console-48.png" alt="firebase logo" srcset=""><div>Firebase</div>
+                </div>
+                <div>
+                <img src="./assets/icons8-react-40.png" alt="react logo" srcset=""><div>React js</div>
+                </div>
+                <div>
+                    <img src="./assets/icons8-node-js-windows-11-color/icons8-node-js-48.png" alt="node js logo" srcset=""><div>Node js</div>
+                </div>
+                <div>
+                    <img src="./assets/icons8-mongoose-color/icons8-mongoose-48.png" alt="mongoose logo" srcset=""><div>Mongoose</div>
+                </div>
+                <div>
+                    <img src="./assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-tal-revivo-color/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png" alt="mongodb logo" srcset=""><div>Mongo db</div>
+                </div>
+                <div>
+                    <img src="./assets/icons8-pug-color/icons8-pug-48.png" alt="pug logo" srcset=""><div>Pug</div>
+                </div>
             </div>
     </div>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" id="contact-link">
            <div class="fc-row1">Let's work together</div>
            <div class="fc-row2">Need someone who can code and collaborate with your team? I'm ready.</div>
            <div class="fc-row3">

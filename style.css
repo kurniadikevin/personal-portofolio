@@ -175,6 +175,7 @@ header{
     .project-box:hover{
         transform: scale(110%);
         border: none;
+        filter:brightness(110%);
     }
     
         .project-sc{

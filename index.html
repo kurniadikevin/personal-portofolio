@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ <script src="./script.js" defer></script>
 </head>
 <body>
     <header id="home-link">
@@ -36,43 +36,25 @@
                  </p>
             </div>
             <div class="desc-bottom">
-                <span class="material-symbols-outlined">mail</span>
+                <a>
+                    <span class="material-symbols-outlined" id="mail-logo">mail</span>
+                </a>
                 <a href="https://github.com/kurniadikevin" id="github-head">
                 <i class="fa fa-github" style="font-size:36px"></i>
+                </a>
+                <a>
+                    <img src="./assets/codewars_icon.png" id="codewars-logo" height="40" width="40">
                 </a>
             </div>
         </div>
     </header>
 
     <div class="main" id="work-link">
-        <div class="project-box">
-            <div class="project-sc">Project Screenshot</div>
-            <div class="project-detail">
-                <div class="project-name">Twittish</div>
-                <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/twittish">
-                        <i class="fa fa-github" style="font-size:36px"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
 
         <div class="project-box">
-            <div class="project-sc">Project Screenshot</div>
-            <div class="project-detail">
-                <div class="project-name">Weather App</div>
-                <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/Weather-App">
-                        <i class="fa fa-github" style="font-size:36px"></i>
-                    </a>
-                </div>
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/friendface-sc.png">
             </div>
-        </div>
-
-        <div class="project-box">
-            <div class="project-sc">Project Screenshot</div>
             <div class="project-detail">
                 <div class="project-name">Friendface</div>
                 <div class="project-link">
@@ -85,11 +67,68 @@
         </div>
 
         <div class="project-box">
-            <div class="project-sc">Project Screenshot</div>
+            <a>
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/twittish-sc.png">
+            </div>
+            </a>
+            <div class="project-detail">
+                <div class="project-name">Twittish</div>
+                <div class="project-link">
+                    <a href="https://twittish-newdb.web.app">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/twittish">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/blackboard-sc2.png">
+            </div>
+            <div class="project-detail">
+                <div class="project-name">Blackboard Journal</div>
+                <div class="project-link">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    <a href="">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/weatherapp-sc.png">
+            </div>
+            <div class="project-detail">
+                <div class="project-name">Weather App</div>
+                <div class="project-link">
+                    <a href="https://kurniadikevin.github.io/Weather-App/">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/Weather-App">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="project-box">
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/wheres-waldo-sc.png">
+            </div>
             <div class="project-detail">
                 <div class="project-name">Where's Waldo</div>
                 <div class="project-link">
+                    <a href="https://wheres-waldo.vercel.app/">
                     <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
                     <a href="https://github.com/kurniadikevin/wheres-waldo">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
@@ -98,7 +137,9 @@
         </div>
 
         <div class="project-box">
-            <div class="project-sc">Project Screenshot</div>
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/memory-card.png">
+            </div>
             <div class="project-detail">
                 <div class="project-name">Memory Card</div>
                 <div class="project-link">
@@ -111,12 +152,46 @@
         </div>
 
         <div class="project-box">
-            <div class="project-sc">Project Screenshot</div>
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/membersonly-sc.png">
+            </div>
             <div class="project-detail">
-                <div class="project-name">Etchy-Sketchy</div>
+                <div class="project-name">Members Only</div>
                 <div class="project-link">
                     <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/Etchy-Sketchy">
+                    <a href="https://github.com/kurniadikevin/members-only">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="project-box">
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/blackboard-cms-light.png">
+            </div>
+            <div class="project-detail">
+                <div class="project-name">CMS Blackboard Journal</div>
+                <div class="project-link">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    <a href="https://github.com/kurniadikevin/members-only">
+                        <i class="fa fa-github" style="font-size:36px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <div class="project-sc">
+                <img class="project-img" src="./assets/screenshot-project/etchy-sketch-sc.png">
+            </div>
+            <div class="project-detail">
+                <div class="project-name">Etchy Sketchy</div>
+                <div class="project-link">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    <a href="https://github.com/kurniadikevin/members-only">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -128,37 +203,39 @@
         <div class="mystack-header">My stack</div>
             <div class="mystack-cont">
                 <div>
-                <img src="./assets/icons8-html-5-48.png" alt="html logo"><div>Html</div>
+                <img id="stack-icon" src="./assets/icons8-html-5-96.png" alt="html logo"><div class="caption">Html</div>
                 </div>
                 <div>
-                <img src="./assets/icons8-css3-48.png" alt="css logo" ><div>Css</div>
+                <img  id="stack-icon" src="./assets/icons8-css3-96.png" alt="css logo" ><div class="caption">Css</div>
                 </div>
                 <div>
-                <img src="./assets/icons8-javascript-48.png" alt="javascipt logo"><div>Javascript</div>
+                <img  id="stack-icon" src="./assets/icons8-javascript-48.png" alt="javascipt logo"><div  class="caption">Javascript</div>
                 </div>
                 <div>
-                <img src="./assets/icons8-git-48.png" alt="git logo" srcset=""><div>Git</div>
+                <img  id="stack-icon" src="./assets/icons8-git-48.png" alt="git logo" srcset=""><div class="caption">Git</div>
                 </div>
                 <div>
-                <img src="./assets/icons8-webpack-64.png" alt="webpack logo" srcset=""><div>Webpack</div>
+                <img  id="stack-icon" src="./assets/icons8-webpack-64.png" alt="webpack logo" srcset=""><div  class="caption">Webpack</div>
                 </div>
                 <div>
-                <img src="./assets/icons8-google-firebase-console-48.png" alt="firebase logo" srcset=""><div>Firebase</div>
+                <img  id="stack-icon" src="./assets/icons8-google-firebase-console-48.png" alt="firebase logo" srcset=""><div  class="caption">Firebase</div>
                 </div>
                 <div>
-                <img src="./assets/icons8-react-40.png" alt="react logo" srcset=""><div>React js</div>
+                <img  id="stack-icon" src="./assets/icons8-react-80.png" alt="react logo" srcset=""><div class="caption">React js</div>
                 </div>
                 <div>
-                    <img src="./assets/icons8-node-js-windows-11-color/icons8-node-js-48.png" alt="node js logo" srcset=""><div>Node js</div>
+                    <img  id="stack-icon" src="./assets/icons8-node-js-windows-11-color/icons8-node-js-48.png" alt="node js logo" srcset=""><div  class="caption">Node js</div>
                 </div>
                 <div>
-                    <img src="./assets/icons8-mongoose-color/icons8-mongoose-48.png" alt="mongoose logo" srcset=""><div>Mongoose</div>
+                    <img  id="stack-icon" src="./assets/icons8-mongoose-color/icons8-mongoose-48.png" alt="mongoose logo" srcset=""><div  class="caption">Mongoose</div>
                 </div>
                 <div>
-                    <img src="./assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-tal-revivo-color/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png" alt="mongodb logo" srcset=""><div>Mongo db</div>
+                    <img  id="stack-icon" src="./assets/icons8-mongodb-a-cross-platform-document-oriented-database-program-tal-revivo-color/icons8-mongodb-a-cross-platform-document-oriented-database-program-48.png" alt="mongodb logo" srcset="">
+                    <div  class="caption">Mongo db</div>
                 </div>
                 <div>
-                    <img src="./assets/icons8-pug-color/icons8-pug-48.png" alt="pug logo" srcset=""><div>Pug</div>
+                    <img  id="stack-icon" src="./assets/icons8-pug-color/icons8-pug-48.png" alt="pug logo" srcset="">
+                    <div  class="caption">Pug</div>
                 </div>
             </div>
     </div>

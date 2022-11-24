@@ -23,9 +23,9 @@
             <div>
                 <div class="profile-upper">
                     <div class="dashboard">
-                        <div><a href="#home-link">Home</a></div>
-                        <div><a href="#work-link">Work</a></div>
-                        <div ><a href="#contact-link">Contact</a></div>
+                        <div id="dash-link"><a href="#home-link">Home</a></div>
+                        <div id="dash-link"><a href="#work-link">Work</a></div>
+                        <div id="dash-link"><a href="#contact-link">Contact</a></div>
                     </div>
                     <h2>About me</h2>
                     <span class="material-symbols-outlined" id="light-mode">light_mode</span>
@@ -36,31 +36,42 @@
                  </p>
             </div>
             <div class="desc-bottom">
-                <a>
-                    <span class="material-symbols-outlined" id="mail-logo">mail</span>
+                <a  target="_blank"  >
+                    <span class="material-symbols-outlined" id="mail-logo" style="font-size: 40px;" >mail</span>
                 </a>
-                <a href="https://github.com/kurniadikevin" id="github-head">
-                <i class="fa fa-github" style="font-size:36px"></i>
+               
+                <a href="https://github.com/kurniadikevin" target="_blank" id="github-head">
+                    <i class="fa fa-github" style="font-size:40px"></i>
                 </a>
-                <a>
+                <a href="https://www.linkedin.com/in/kevin-kurniadi-841264168/" target="_blank">
+                    <img src="./assets/linkedin-logo.png" id="linkedin-logo" height="40" width="40">
+                </a>
+
+                <a href="https://www.codewars.com/users/kurniadikevin" target="_blank">
                     <img src="./assets/codewars_icon.png" id="codewars-logo" height="40" width="40">
                 </a>
             </div>
         </div>
     </header>
-
-    <div class="main" id="work-link">
-
+    <div class="main-page" id="work-link">
+    <div class="work-title">Projects </div>
+    <div class="main" >
+       
         <div class="project-box">
             <div class="project-sc">
                 <img class="project-img" src="./assets/screenshot-project/friendface-sc.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Friendface</div>
+                <div class="project-name">
+                    <div>Friendface</div>
+                    <div class="project-text">MongoDb Express React Node.js </div>
+                </div>
                 <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/odin-book">
-                    <i class="fa fa-github" style="font-size:36px"></i>
+                    <a href="https://friendface.vercel.app/" target="_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/odin-book" target="_blank">
+                        <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
             </div>
@@ -73,12 +84,15 @@
             </div>
             </a>
             <div class="project-detail">
-                <div class="project-name">Twittish</div>
+                <div class="project-name">
+                    <div>Twittish</div>
+                    <div class="project-text">React Css Firebase</div>
+                </div>
                 <div class="project-link">
-                    <a href="https://twittish-newdb.web.app">
+                    <a href="https://twittish-newdb.web.app" target="_blank">
                     <span class="material-symbols-outlined">open_in_new</span>
                     </a>
-                    <a href="https://github.com/kurniadikevin/twittish">
+                    <a href="https://github.com/kurniadikevin/twittish" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -90,10 +104,15 @@
                 <img class="project-img" src="./assets/screenshot-project/blackboard-sc2.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Blackboard Journal</div>
+                <div class="project-name">
+                    <div>Blackboard journal</div>
+                    <div class="project-text">MongoDb Express React Node.js</div>
+                </div>
                 <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="">
+                    <a href="https://blackboardjournal.vercel.app/" target="_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/blog-client" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -105,18 +124,21 @@
                 <img class="project-img" src="./assets/screenshot-project/weatherapp-sc.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Weather App</div>
+                <div class="project-name">
+                    <div>Weather-App</div>
+                    <div class="project-text">Html Css Javascript</div>
+                </div>
                 <div class="project-link">
-                    <a href="https://kurniadikevin.github.io/Weather-App/">
+                    <a href="https://kurniadikevin.github.io/Weather-App/" target="_blank">
                     <span class="material-symbols-outlined">open_in_new</span>
                     </a>
-                    <a href="https://github.com/kurniadikevin/Weather-App">
+                    <a href="https://github.com/kurniadikevin/Weather-App" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
             </div>
         </div>
-
+    
         
 
         <div class="project-box">
@@ -124,12 +146,15 @@
                 <img class="project-img" src="./assets/screenshot-project/wheres-waldo-sc.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Where's Waldo</div>
+                <div class="project-name">
+                    <div>Where's Waldo</div>
+                    <div class="project-text">Html Css React.js</div>
+                </div>
                 <div class="project-link">
-                    <a href="https://wheres-waldo.vercel.app/">
+                    <a href="https://wheres-waldo.vercel.app/" target="_blank">
                     <span class="material-symbols-outlined">open_in_new</span>
                     </a>
-                    <a href="https://github.com/kurniadikevin/wheres-waldo">
+                    <a href="https://github.com/kurniadikevin/wheres-waldo" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -141,10 +166,15 @@
                 <img class="project-img" src="./assets/screenshot-project/memory-card.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Memory Card</div>
+                <div class="project-name">
+                    <div>Memory-Card</div>
+                    <div class="project-text">Html Css React.js </div>
+                </div>
                 <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/Memory-Card">
+                    <a href="https://kurniadikevin.github.io/Memory-Card/"  target="_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/Memory-Card" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -156,10 +186,15 @@
                 <img class="project-img" src="./assets/screenshot-project/membersonly-sc.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Members Only</div>
+                <div class="project-name">
+                    <div>Member's Only</div>
+                    <div class="project-text">MongoDb Express React Node.js</div>
+                </div>
                 <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/members-only">
+                    <a href="https://github.com/kurniadikevin/members-only" target="_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/members-only" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -173,10 +208,15 @@
                 <img class="project-img" src="./assets/screenshot-project/blackboard-cms-light.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">CMS Blackboard Journal</div>
+                <div class="project-name">
+                    <div>CMS Blackboard journal</div>
+                    <div class="project-text">MongoDb Express React Node.js</div>
+                </div>
                 <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/members-only">
+                    <a href="https://cmsblackboardjournal-fv8lfxa5r-kurniadikevin.vercel.app/" target="_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/blog-cms" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
@@ -188,16 +228,21 @@
                 <img class="project-img" src="./assets/screenshot-project/etchy-sketch-sc.png">
             </div>
             <div class="project-detail">
-                <div class="project-name">Etchy Sketchy</div>
+                <div class="project-name">
+                    <div>Etchy-Sketchy</div>
+                    <div class="project-text">Html Css Javascript</div>
+                </div>
                 <div class="project-link">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <a href="https://github.com/kurniadikevin/members-only">
+                    <a href="https://kurniadikevin.github.io/Etchy-Sketchy/" target="'_blank">
+                        <span class="material-symbols-outlined">open_in_new</span>
+                    </a>
+                    <a href="https://github.com/kurniadikevin/Etchy-Sketchy" target="_blank">
                         <i class="fa fa-github" style="font-size:36px"></i>
                     </a>
                 </div>
             </div>
         </div>
-        
+    </div>  
     </div>
     <div class="mystack-row">
         <div class="mystack-header">My stack</div>

@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 :root{
     background-image: linear-gradient(to right,rgb(50,50,50),rgb(25,25,25));
     background-size: 400%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 12pt;
     --color1:rgb(221,205,192);
+    --color2: #BCBEC0;
     --black: rgb(25,25,25);
     zoom: 90%;
 }
@@ -16,11 +17,9 @@ body{
     grid-template-rows: 1fr auto 1fr 0.75fr;
     align-content: center;
     max-height: fit-content;
-    /* min-width: 300px; */
     color: var(--color1);
     margin: 70px 100px;
     margin-bottom: 50px;
-    /* border: 1px solid red;  */
     box-sizing: border-box;
 }
 
@@ -79,6 +78,7 @@ header{
 }
     h2{
         font-size: 20pt;
+       
     }
     .image-cont{
         display: flex;
@@ -98,6 +98,7 @@ header{
             font-size: 16pt;
             font-weight: 100;
             padding-top: 10px;
+            color: var(--color2);
 
         }
     .profile-desc{
@@ -106,7 +107,9 @@ header{
         display: grid;
     }
     #description-head{
-       font-size: 13pt;
+       font-size: 14pt;
+       font-weight: 500;
+       color: var(--color2);
     }
     .dashboard{
         position: absolute;
@@ -122,6 +125,7 @@ header{
     #dash-link{
         color: var(--color1);
         transition: 1s;
+        font-size: 16pt;
     }
     #dash-link>a{
         text-decoration: none;
@@ -276,11 +280,13 @@ footer{
         display: flex;
         align-items: flex-start;
         font-size: 15pt;
+        color: var(--color2);
     }
     .fc-row3{
         display: flex;
         align-items: flex-start;
         font-size: 20pt;
+        gap: 50px;
         
     }
         #contact-btn{
@@ -290,26 +296,64 @@ footer{
             border-radius: 15px;
             border: none;
             padding: 12px 15px;
+            cursor: pointer;
         }
         #contact-btn:hover{
             background-color: white;
             color: #55a8e0bd;
         }
-    
+
+    #form-contact{
+        display: none;
+        height: 50px;
+        gap: 50px;
+        align-items: center;
+    }
+        .control{
+            display: flex;
+            font-size: 15pt;
+            height: 30px;
+            gap: 25px;
+        }
+        .control>input, .control>textarea{
+            background-color: rgb(25,25,25);
+            color: white;
+        }
+        #message-text{
+            resize: vertical;
+        }
+
+        #submit-btn{
+            font-size: 13pt;
+            background-color: #55a8e0bd;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
 @media(max-width: 600px){
     
     body{
       margin: 25px 25px;
-      
+     
+    }
+    .dashboard{
+        display: none;
     }
 
     header{
-        grid-template-rows: 3fr 2fr;
+        grid-template-rows: 2fr 2fr;
         grid-template-columns: none;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
  
+    .desc-bottom{
+        display: flex;
+        justify-content: center;
+    }
     .main{
         grid-template-columns: repeat(1, 5fr);
     grid-template-rows: repeat(6,6fr);
@@ -317,9 +361,7 @@ footer{
     }
 
     .mystack-cont{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+       
     }
 
     
@@ -337,18 +379,10 @@ footer{
         margin: 25px 50px;
         
       }
-   
-     /*  header{
-          grid-template-rows: 3fr 2fr;
-          grid-template-columns: none;
-          padding-top: 0;
-          padding-bottom: 0;
-      } */
-  
-          
+         
       .main{
-          grid-template-columns: repeat(2, 5fr);
-      grid-template-rows: repeat(3,6fr);
+          grid-template-columns: repeat(1, 5fr);
+      grid-template-rows: repeat(9,6fr);
       padding: 50px;
       }
 }

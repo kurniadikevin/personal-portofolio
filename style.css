@@ -63,13 +63,6 @@ header{
     margin-top: 10px;
 }
 
-
-
-.main>div{
-   
-}
-
-
 header{
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -87,7 +80,6 @@ header{
         justify-content: center;
        
     }
-
         .name-cont{
             position: absolute;
             top: 40px;
@@ -186,6 +178,8 @@ header{
 
        
 
+
+/* -------------------------- MAIN --------------------- */
 .work-title{
     font-size: 20pt;
     display: flex;
@@ -193,32 +187,36 @@ header{
     padding-top: 20px;
 }
 
-/* -------------------------- MAIN --------------------- */
+
 .main-page{
     display: grid;
     grid-template-rows: 100px auto;
 }
 
 .main{
-    padding: 100px;
+    padding: 200px;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(2, minmax(300px, 5fr));
-    grid-template-rows: repeat(3,4fr); 
+   place-items: center;
     gap: 100px;
 }
- .main-top{
-    
+ .main-top{  
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
  }
     .work-title{
         font-size: 30pt;
         letter-spacing: 2px;
     }
 
+    .slice-control-cont{
+        display: flex;
+        font-size: 25pt;
+        gap: 50px;
+    }
     .project-box{
     display: grid;
     grid-template-rows: 2fr 1fr; 

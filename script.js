@@ -11,7 +11,7 @@ for(let i=0; i< icon.length; i++){
 }
 
 // slideshow script
-const projectBox= document.querySelectorAll('.project-box');
+/* const projectBox= document.querySelectorAll('.project-box');
 let currentSliceIndex = 0;
 
 const showSlice=(i)=>{
@@ -29,7 +29,7 @@ const removeSliceBackward =(i)=>{
 }
 
 showSlice(currentSliceIndex);
-
+ */
 /* setInterval(function(){
     currentSliceIndex++;
     if(currentSliceIndex === 10){
@@ -40,7 +40,8 @@ showSlice(currentSliceIndex);
  */
 
 //sliceshow control
-const next=document.querySelector('#next');
+
+/* const next=document.querySelector('#next');
 const previous = document.querySelector('#previous');
 
 next.addEventListener('click',function(){
@@ -61,3 +62,4 @@ previous.addEventListener('click',function(){
 
    
 },)
+ */

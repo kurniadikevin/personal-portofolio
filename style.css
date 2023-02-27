@@ -246,8 +246,6 @@ header>div{
        
     }
         .project-sc{
-            
-         
             order:1;
         }
         .project-img{
@@ -336,6 +334,8 @@ header>div{
     .caption{
        transition: 1s;
        display: none;
+       color: var(--ternary);
+       font-size: 15pt;
     }
 
     /* ----------------FOOTER -------------------- */
@@ -445,17 +445,34 @@ footer{
 }
 
 
- @media(max-width: 1200px) and (min-width:601px){
-    body{
-        margin: 25px 50px;
-        
-      }
-         
+ @media(max-width:600px){
+    :root{
+        zoom: 40%;
+    }
+   
       .main{
-        display: grid;
-          grid-template-columns: repeat(1, 5fr);
-      grid-template-rows: repeat(9,6fr);
-      padding: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
       }
+
+      .project-box{
+        grid-template-columns: 1fr;
+      }
+      .project-sc{
+        order:-1;
+    }
+    .project-detail{
+        order: 1;
+    }
+    #profile-image{
+        position: relative;
+        bottom: -100px;
+        left: 0px;
+    }
+    .name-cont{
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
 }
  

@@ -314,7 +314,7 @@ header>div{
     .mystack-cont{
         display: grid;
         grid-template-rows: repeat(3,70px);
-        grid-template-columns: repeat(4,70px);
+        grid-template-columns: repeat(6,70px);
         gap: 30px;
         
     }
@@ -477,3 +477,6 @@ footer{
     }
 }
  
+#desc-link{
+    color: var(--ternary);
+}

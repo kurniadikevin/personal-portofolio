@@ -108,8 +108,8 @@ header>div{
         border-radius: 50%;
         filter: grayscale(20%);
         transition: 1s; 
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 28/0px;
         position: relative;
         left: 20px;
         bottom: 40px;
@@ -139,17 +139,17 @@ header>div{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 20px;
+        gap: 25px;
         padding-right: 20px;
         position: relative;
         bottom: 10px;
     }
     #description-head{
-       font-size: 15pt;
+       font-size: 16pt;
        font-weight: 550;
        color: var(--text);
        font-family: Open sans;
-       width: 700px;
+       width: 800px;
       position: relative;
       bottom: 25px;
     }
@@ -165,7 +165,6 @@ header>div{
         font-size: 15pt;
     }
     #dash-link{
-       
         transition: 0.5s;
         font-size: 30pt;
     }
@@ -173,9 +172,10 @@ header>div{
         text-decoration: none;
     }
     #dash-link:hover{
-        border-right: 1px solid var(--ternary);
+        border-right: 4px solid var(--ternary);
         transform: translateX(-10px);
         padding-right: 10px;
+        color: var(--ternary)!important;
     }
         
         .profile-upper{

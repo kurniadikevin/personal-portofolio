@@ -335,8 +335,17 @@ header>div{
     .caption{
        transition: 1s;
        display: none;
-       color: var(--ternary);
-       font-size: 15pt;
+       color: var(--text);
+       font-size: 14pt;
+       padding-top: 5px;
+       font-weight: 200;
+    }
+
+    #title-link{
+        text-decoration: none;
+    }
+    #title-link:hover{
+        color: var(--ternary);
     }
 
     /* ----------------FOOTER -------------------- */
